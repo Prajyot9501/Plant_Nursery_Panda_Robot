@@ -1,0 +1,12 @@
+<launch>
+    <!-- Load MoveIt demo with RViz -->
+    <include file="$(find panda_moveit_config)/launch/demo.launch">
+        <arg name="use_rviz" value="false"/>
+    </include>
+
+    <!-- Run RViz with our custom config -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find plant_nursery_robot)/config/nursery.rviz" required="true"/>
+
+    <!-- Run our control node -->
+    <node name="plant_nursery_robot" pkg="plant_nursery_robot" type="plant_nursery_node.py" output="screen"/>
+</launch>

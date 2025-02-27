@@ -1,0 +1,8 @@
+prefix=/home/praj/ecen-337l-final-project-Prajyot9501/catkin_ws/install
+
+Name: plant_nursery_robot
+Description: Description of plant_nursery_robot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

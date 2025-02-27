@@ -1,0 +1,48 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 84
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Status1
+        - /MotionPlanning1
+        - /MotionPlanning1/Planning Scene1
+      Splitter Ratio: 0.5
+    Tree Height: 557
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz/Grid
+      Name: Grid
+      Value: true
+    - Class: moveit_rviz_plugin/MotionPlanning
+      Name: MotionPlanning
+      Planned Path:
+        Loop Animation: false
+        State Display Time: 0.05 s
+        Trajectory Topic: /move_group/display_planned_path
+      Planning Scene Topic: /move_group/monitored_planning_scene
+      Robot Description: robot_description
+      Scene Geometry:
+        Scene Alpha: 0.9
+      Scene Robot:
+        Robot Alpha: 0.5
+      Value: true
+  Global Options:
+    Fixed Frame: world
+  Tools:
+    - Class: rviz/Interact
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+  Value: true
+  Views:
+    Current:
+      Class: rviz/XYOrbit
+      Distance: 2.0
+      Focal Point:
+        X: 0.5
+        Y: 0.0
+        Z: 0.2
+      Name: Current View
+      Target Frame: world
+      Value: XYOrbit (rviz)
